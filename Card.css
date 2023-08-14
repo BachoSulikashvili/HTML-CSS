@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(27, 27, 27);
+}
+.card {
+    width: 300px;
+    height: 450px;
+    margin: 150px auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.front {
+    background-color: black;
+    background: url(https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/programming%20evolution.jpg?itok=WTj9-yNz);
+    background-position: center;
+    background-size: cover;
+}
+.back {
+    background-color: aqua;
+    transform: rotateY(180deg);
+    background: url(CSSImages/Card-Background.png); 
+    background-position: center;
+    background-size: cover;
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+h3,p {
+    transform: translate(120px, 350px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    font-size: 15px;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.icones {
+    text-align: center;
+    margin-top: 110%;
+}
+ion-icon {
+    font-size: 35px;
+    padding: 0 20px;
+    transition: .3s;
+}
+ion-icon:first-child:hover {
+    color: rgb(30, 30, 248);
+}
+ion-icon:nth-child(2):hover {
+    color: rgb(248, 63, 30);
+}
+ion-icon:last-child:hover {
+    color: rgb(88, 30, 248);
+}

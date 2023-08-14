@@ -1,0 +1,40 @@
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: white;
+  }
+  h1 {
+    font-size: 4.2rem;    
+  }
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px white,
+        0 0 11px white,
+        0 0 19px white,
+        0 0 40px rgb(255, 0, 0),
+        0 0 80px rgb(255, 0, 0),
+        0 0 90px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0),
+        0 0 150px rgb(255, 0, 0);
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+h2 {
+    font-size: 30px;
+}
+.container {
+    margin-top: 200px;
+}
+body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #020c02;
+}  
+h1, h2 {
+    text-align: center;
+    font-weight: 400;
+}
+  
+  
